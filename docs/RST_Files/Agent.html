@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html lang="Java Script">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Documentation on Adding an Agent in Agent Pool &#8212; Dover-IT-Test-Automation Documentation documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Documentation on GIT-Test Complete Integration" href="GitTestComplete.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="GitTestComplete.html" title="Documentation on GIT-Test Complete Integration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Dover-IT-Test-Automation Documentation documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Documentation on Adding an Agent in Agent Pool</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="documentation-on-adding-an-agent-in-agent-pool">
+<h1>Documentation on Adding an Agent in Agent Pool<a class="headerlink" href="#documentation-on-adding-an-agent-in-agent-pool" title="Permalink to this heading">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Login to the Azure Devops Portal and navigate to “Project Settings”, under Pipelines click on Agent Pools</p></li>
+<li><p>Click on “Add Pool” select “Pool Type” as self-Hosted agents give the name of Agent Pool select the checkbox “Grant access permissions to all pipelines”</p></li>
+<li><p>Click on newly added “Agent Pool” and click on “New Agent”</p></li>
+<li><p>Download the agent into the VM(Virtual Machine)</p></li>
+<li><p>Create anew folder “agent” in C folder and extract the downloaded zip folder into the C:/agent folder</p></li>
+<li><p>Open Command Prompt as administrator and give cd c:/agent</p></li>
+<li><p>PAT(Personal Access Token): Click on User settings icon on the top right of the Azure Portal page. Click on New Token, Given Name of the Token and in Work Items select “Read write and Manage”, Click on “show all scopes” in Agent Pools select “Read and manage” and click on create. The PAT is generated copy it and store</p></li>
+<li><p>In the Command Prompt give .config.cmd</p></li>
+<li><p>Enter the service URL (the organization link) for e.g: <a class="reference external" href="https://dev.azure.com/vnaganikhila">https://dev.azure.com/vnaganikhila</a></p></li>
+<li><p>Press Enter for PAT authentication type</p></li>
+<li><p>Enter the PAT Token</p></li>
+<li><p>Enter the already created agent pool name</p></li>
+<li><p>Enter the machine name or press enter for default</p></li>
+<li><p>Press Enter for Work Folder</p></li>
+<li><p>Press Y to run agent as service/ N for interactive session</p></li>
+</ol>
+<blockquote>
+<div><p>Difference between service/interactive sessions:
+Service: No need to give external commands to make agent online
+Interactive: external command .run.cmd is required to make agent online</p>
+</div></blockquote>
+<ol class="arabic simple" start="16">
+<li><p>For service session, User authentication is required (press enter)</p></li>
+<li><p>To prevent service starting immediately after configuration is finished: Press N</p></li>
+<li><p>Service Agent is added successfully</p></li>
+</ol>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="GitTestComplete.html"
+                          title="previous chapter">Documentation on GIT-Test Complete Integration</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/RST_Files/Agent.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="GitTestComplete.html" title="Documentation on GIT-Test Complete Integration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Dover-IT-Test-Automation Documentation documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Documentation on Adding an Agent in Agent Pool</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Nikhila.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.1.
+    </div>
+  </body>
+</html>

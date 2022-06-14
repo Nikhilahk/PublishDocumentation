@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html lang="Java Script">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Documentation on GIT-Test Complete Integration &#8212; Dover-IT-Test-Automation Documentation documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Documentation on Adding an Agent in Agent Pool" href="Agent.html" />
+    <link rel="prev" title="Introduction" href="Introduction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Agent.html" title="Documentation on Adding an Agent in Agent Pool"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Dover-IT-Test-Automation Documentation documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Documentation on GIT-Test Complete Integration</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="documentation-on-git-test-complete-integration">
+<h1>Documentation on GIT-Test Complete Integration<a class="headerlink" href="#documentation-on-git-test-complete-integration" title="Permalink to this heading">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Go to Tools-&gt;Options</p></li>
+<li><p>Make sure that Git is downloaded and installed into the system</p></li>
+<li><p>Go to Source Control</p></li>
+<li><p>Select Git-Plugin option</p></li>
+<li><p>Make sure that all the projects are closed while setting up Git-Plugin</p></li>
+<li><p>Open the Project suite file which is to be posted to Repository (ex-Azure which uses GIT)</p></li>
+<li><p>Right Click on the Project suite and select Source Control-&gt;Create Repository</p></li>
+<li><p>Select the Project Suite file path</p></li>
+<li><p>Right Click on the Project suite and select Source Control-&gt;Commit</p></li>
+<li><p>It shows all the untracked files and staged files, give an appropriate commit message and click on Commit</p></li>
+<li><p>Right Click on the Project suite and select Source Control-&gt;Push</p></li>
+<li><p>Into the command line give “-c core.askpass= git remote add &lt;remote link name&gt;(ex origin) &lt;remote repository link&gt; (<a class="reference external" href="https://vnaganikhila&#64;dev.azure.com/vnaganikhila/GITAzurePractice/_git/GITAzurePractice">https://vnaganikhila&#64;dev.azure.com/vnaganikhila/GITAzurePractice/_git/GITAzurePractice</a>)</p></li>
+<li><p>We can also add a branch on giving in the command line “-c core.askpass=git branch &lt;new branch name&gt;</p></li>
+<li><p>Right Click on the Project suite and select Source Control-&gt;Push</p></li>
+<li><p>Select the value for “Push To Remote Repository” e.g. (Origin i.e. remote repo link name)</p></li>
+<li><p>If it needed to be pushed to master, select the option “Push Current branch” and click on push</p></li>
+<li><p>If it needed to be pushed to specific branch give command line as -c core.askpass=git checkout &lt;branch name&gt;</p></li>
+<li><p>Once again go to push tab and it shows Current Local Branch as the branch name other than master and click on push</p></li>
+<li><p>Basic Branch Properties: A new branch automatically copies the files present in master and when a new push is done it uploads/Updates the changes in new branch</p></li>
+<li><p>Common Recuring Error: Updates were rejected on another repository pushing at the same time: Sol: A forced push can be done but it overwrites all the existing changes and commits. For a forced push give command line as “-c core.askpass=git push -f &lt;remote repo link name&gt; &lt;branch &gt;</p></li>
+<li><p>Git Pull: Right Click on the Project suite and select Source Control-&gt;Pull</p></li>
+<li><p>For Fetch: Select the branch name in the field “Remote Branch to pull” and click on fetch -&gt;Ok</p></li>
+<li><p>For Pull: Select the branch name in the field “Remote Branch to pull “and click on OK Pull performs Fetch and Merge and updates the changes and a dialog box appears showing changes were done outside test complete, Click on Yes/Yes to All, the changes will be updated</p></li>
+</ol>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="Introduction.html"
+                          title="previous chapter">Introduction</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="Agent.html"
+                          title="next chapter">Documentation on Adding an Agent in Agent Pool</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/RST_Files/GitTestComplete.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Agent.html" title="Documentation on Adding an Agent in Agent Pool"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Dover-IT-Test-Automation Documentation documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Documentation on GIT-Test Complete Integration</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Nikhila.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.1.
+    </div>
+  </body>
+</html>
